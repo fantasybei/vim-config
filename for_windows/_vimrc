@@ -45,3 +45,20 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+filetype off
+
+set rtp+=~/vimfiles/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+
+" Ning's bundle
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'The-NERD-tree'
+
+"let g:vundle_default_git_proto = 'git'
+
+syntax on
+filetype plugin indent on
+set tabstop=2
